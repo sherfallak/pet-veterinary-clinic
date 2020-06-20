@@ -40,7 +40,7 @@ private final VetService vetService;
 
         ownerService.save(owner2);
 
-        System.out.println("owner loaded");
+        System.out.println("owner loaded...");
 
         Vet vet1=new Vet();
         vet1.setId(3L);
@@ -55,7 +55,7 @@ private final VetService vetService;
         vet1.setLastName("anjum");
         vetService.save(vet2);
 
-        System.out.println("vet loaded");
+        System.out.println("vet loaded...");
 
     }
 }
