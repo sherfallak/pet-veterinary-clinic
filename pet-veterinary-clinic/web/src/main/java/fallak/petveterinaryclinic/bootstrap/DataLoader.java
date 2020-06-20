@@ -27,21 +27,18 @@ private final VetService vetService;
     @Override
     public void run(String... args) throws Exception {
         Owner owner1=new Owner();
-        owner1.setId(1L);
         owner1.setFirstName("muhammad");
         owner1.setLastName("shahbaz");
 
         ownerService.save(owner1);
 
         Owner owner2=new Owner();
-        owner1.setId(2L);
         owner1.setFirstName("muhammad");
         owner1.setLastName("nawaz");
 
         ownerService.save(owner2);
 
         Owner owner3=new Owner();
-        owner1.setId(3L);
         owner1.setFirstName("sher");
         owner1.setLastName("fallak");
 
@@ -49,14 +46,12 @@ private final VetService vetService;
         System.out.println("owner loaded...");
 
         Vet vet1=new Vet();
-        vet1.setId(1L);
         vet1.setFirstName("Dr. ali");
         vet1.setLastName("khan");
 
         vetService.save(vet1);
 
         Vet vet2=new Vet();
-        vet1.setId(2L);
         vet1.setFirstName("Dr. sheraz");
         vet1.setLastName("anjum");
         vetService.save(vet2);
