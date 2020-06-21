@@ -1,1 +1,5 @@
+fallak\petveterinaryclinic\controllers\VetController.class
 fallak\petveterinaryclinic\PetVeterinaryClinicApplication.class
+fallak\petveterinaryclinic\bootstrap\DataLoader.class
+fallak\petveterinaryclinic\controllers\ownerController.class
+fallak\petveterinaryclinic\controllers\IndexController.class
