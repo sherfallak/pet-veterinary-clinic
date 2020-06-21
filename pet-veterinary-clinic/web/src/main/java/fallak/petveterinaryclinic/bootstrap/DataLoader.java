@@ -1,8 +1,10 @@
 package fallak.petveterinaryclinic.bootstrap;
 
 import fallak.petveterinaryclinic.data.model.Owner;
+import fallak.petveterinaryclinic.data.model.PetType;
 import fallak.petveterinaryclinic.data.model.Vet;
 import fallak.petveterinaryclinic.data.services.OwnerService;
+import fallak.petveterinaryclinic.data.services.PetTypeService;
 import fallak.petveterinaryclinic.data.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -12,20 +14,26 @@ public class DataLoader implements CommandLineRunner {
 
 private final OwnerService ownerService;
 private final VetService vetService;
+private final PetTypeService petTypeService;
 
-    public DataLoader(final OwnerService ownerService, final VetService vetService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
+        this.petTypeService = petTypeService;
     }
 
-    /**
-     * Callback used to run the bean.
-     *
-     * @param args incoming main method arguments
-     * @throws Exception on error
-     */
+
     @Override
     public void run(String... args) throws Exception {
+        PetType dog=new PetType();
+        dog.setName("dog");
+        PetType saveDogPetType=petTypeService.save(dog);
+
+        PetType cat=new PetType();
+        dog.setName("cat");
+        PetType saveCatPetType=petTypeService.save(dog);
+
+
         Owner owner1=new Owner();
         owner1.setFirstName("muhammad");
         owner1.setLastName("shahbaz");

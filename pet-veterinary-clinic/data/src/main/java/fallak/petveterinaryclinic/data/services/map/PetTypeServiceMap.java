@@ -2,9 +2,11 @@ package fallak.petveterinaryclinic.data.services.map;
 
 import fallak.petveterinaryclinic.data.model.PetType;
 import fallak.petveterinaryclinic.data.services.PetTypeService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetTypeServiceMap extends AbstractMapService<PetType,Long> implements PetTypeService {
     @Override
     public Set<PetType> findAll() {
