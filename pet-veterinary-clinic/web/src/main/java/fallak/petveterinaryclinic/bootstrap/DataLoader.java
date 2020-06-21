@@ -26,11 +26,11 @@ private final PetTypeService petTypeService;
     @Override
     public void run(String... args) throws Exception {
         PetType dog=new PetType();
-        dog.setName("dog");
+        dog.setName("Buldog");
         PetType saveDogPetType=petTypeService.save(dog);
 
         PetType cat=new PetType();
-        dog.setName("cat");
+        dog.setName("Manocat");
         PetType saveCatPetType=petTypeService.save(dog);
 
 
