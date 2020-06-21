@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://thymeleaf.org">
+<html lang="en" xmlns:th="http://thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'vets')}">
 <head>
     <meta charset="UTF-8">
     <title>Vets index page</title>
 </head>
 <body>
 <!--/@thymesVar id="vet" type="fallak.petveterinaryclinic.model.Vet"*/-->
-<h1 th="'List of Vets'">Vet list page !!!</h1>
-<table>
+<h2 th="'List of Vets'">Vet list page !!!</h2>
+<table id="vets" class="table table-striped">
     <thead>
     <tr>
         <th>ID</th>
@@ -17,9 +17,9 @@
     </thead>
     <tbody>
     <tr th:each ="vet:${vets}">
-        <td th:text ="${vet.id}">id</td>
-        <td th:text ="${vet.firstName}">first name</td>
-        <td th:text ="${vet.lastName}">last name</td>
+        <td th:text ="${vet.id}">ID</td>
+        <td th:text ="${vet.firstName}">First Name</td>
+        <td th:text ="${vet.lastName}">Last Name</td>
     </tr>
     </tbody>
 </table>
