@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/data2/data.iml" filepath="$PROJECT_DIR$/data2/data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pet-veterinary-clinic.iml" filepath="$PROJECT_DIR$/pet-veterinary-clinic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web2/web.iml" filepath="$PROJECT_DIR$/web2/web.iml" />
+    </modules>
+  </component>
+</project>
