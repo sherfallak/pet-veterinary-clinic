@@ -21,6 +21,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<version.jdk>1.8</version.jdk>
 	</properties>
 
 	<build>
