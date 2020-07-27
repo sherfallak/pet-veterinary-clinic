@@ -18,5 +18,11 @@ public class ownerController {
         model.addAttribute("owners",ownerService.findAll());
         return "owners/index";
     }
+
+    @RequestMapping("owners/find")
+    public String findOwners(Model model){
+        model.addAttribute("owners",ownerService.findAll());
+        return "owners/find";
+    }
 }
 
